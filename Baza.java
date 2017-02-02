@@ -10,6 +10,7 @@ public class Baza
     
     private int numeroJugadores;
     private int palo;
+    private Carta[] baza;
     
 
     /**
@@ -19,10 +20,14 @@ public class Baza
     {
         this.numeroJugadores = numeroJugadores;
         this.palo = paloQuePinta;
-        
+        baza = new Carta[numeroJugadores];
     }
 
-   
+    public void addCarta (Carta cartaTirada, String nombreJugador){
+        int i = 0;
+        baza[i] = cartaTirada;
+        i++;
+    }
     
    
 }
