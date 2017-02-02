@@ -15,6 +15,8 @@ public class Baza
     private Carta cartaganadora;
 
     private int palo;
+    
+    private Jugador nombreJugador;
 
     /**
      * Palo que pinta: 0 es oros, 1 es copas, 2 es espadas y 3 es bastos
@@ -43,7 +45,7 @@ public class Baza
     }
 
     public Carta cartaQueVaGanandoLaBaza(){
-        for(int i = 0; i < numeroJugadores; i++){
+                for(int i = 0; i < numeroJugadores; i++){
             if(baza[i] == null){
                 cartaganadora = null;
 
@@ -52,5 +54,10 @@ public class Baza
         }
         return cartaganadora;
 
+    }
+    
+    public String nombreJugadorQueVaGanandoLaBaza(){
+        if(carta
+        nombreJugador.getNombre()
     }
 }
